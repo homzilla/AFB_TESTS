@@ -1,0 +1,79 @@
+Report from: 14-03-2019 17:44:46
+
+Test File: E:\UALTESTS\AFB_CNT_UP.txt
+
+Test AFB_CNT_UP1, AFB tests for AFB_CNT_UP element
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=1
+    Check #OUT_CNT_UP1=0 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=1 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=1 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=2 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=2 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=3 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=3 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=4 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=4 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=5 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=5 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=6 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=6 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=7 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=7 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=8 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=8 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=9 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=9 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=10 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=10 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=11 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_UP1=11 - Ok
+Endtest AFB_CNT_UP1 - Ok
+

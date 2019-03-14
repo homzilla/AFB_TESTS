@@ -1,0 +1,48 @@
+test AFB_DIV_FP, AFB tests for AFB_DIV_FP element
+schema AFB_DIV_FP
+compatible MODULE_LM1SF00
+set #TUN_IN_FP1 = 4 , #TUN_IN_FP2 = 2
+check #OUT_DIV_FP001 == 2
+
+set #TUN_IN_FP1 = 66.5 , #TUN_IN_FP2 = 4.7
+check #OUT_DIV_FP001 == 14.1489 // уточнить сколько знаков после запятой выводить
+
+set #TUN_IN_FP1 = 0 , #TUN_IN_FP2 = 12.37
+check #OUT_DIV_FP001 == 0
+check #OUT_ZERO_DIV_FP001 == 1
+
+set #TUN_IN_FP1 = 0 , #TUN_IN_FP2 = 12.37
+check #OUT_DIV_FP001 == 0
+
+set #TUN_IN_FP1 = 123.6 , #TUN_IN_FP2 = 0
+check #OUT_DIV_BY_ZERO_DIV_FP001 == 1
+
+set #TUN_IN_FP1 = -295.9 , #TUN_IN_FP2 = 0
+check #OUT_DIV_BY_ZERO_DIV_FP001 == 1
+
+set #TUN_IN_FP1 = 0 , #TUN_IN_FP2 = 0
+check #OUT_NAN_DIV_FP001 == 1
+
+
+//set #TUN_IN_FP1 = 0 , #TUN_IN_FP2 = ±∞
+//check #OUT_ZERO_DIV_FP001 == 1
+
+//set #TUN_IN_FP1 = 0 , #TUN_IN_FP2 = 12.37
+//check #UNDERFLOW_DIV_FP001 == 1
+
+//set #TUN_IN_FP1 = 123.5 , #TUN_IN_FP2 = NaN
+//check #OUT_NAN_DIV_FP001 == 1
+
+//set #TUN_IN_FP1 = 123.5 , #TUN_IN_FP2 = NaN
+//check #OUT_NAN_DIV_FP001 == 1
+
+//set #TUN_IN_FP1 = NaN , #TUN_IN_FP2 = 100.15
+//check #OUT_NAN_DIV_FP001 == 1
+
+//set #TUN_IN_FP1 = NaN , #TUN_IN_FP2 = 0
+//check #OUT_NAN_DIV_FP001 = 1
+//check #OUT_DIV_BY_ZERO_DIV_FP001 == 1
+
+//set #TUN_IN_FP1 = ±∞ , #TUN_IN_FP2 = ±∞
+//check #OUT_NAN_DIV_FP001 == 1
+endtest

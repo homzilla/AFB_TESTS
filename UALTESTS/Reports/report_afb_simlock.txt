@@ -1,0 +1,23 @@
+Report from: 14-03-2019 14:49:02
+
+Test File: E:\UALTESTS\AFB_SIMLOCK.txt
+
+Test AFB_SIMLOCK1, AFB tests for AFB_SIMLOCK element
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_SIM1=0
+    Set #TUN_DSCR_BLOCK1=0
+    Check #OUT_SIMLOCK1=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_SIM1=0
+    Set #TUN_DSCR_BLOCK1=0
+    Check #OUT_SIMLOCK1=1 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_SIM1=1
+    Set #TUN_DSCR_BLOCK1=0
+    Check #OUT_SIMLOCK1=1 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_SIM1=0
+    Set #TUN_DSCR_BLOCK1=1
+    Check #OUT_SIMLOCK1=0 - Ok
+Endtest AFB_SIMLOCK1 - Ok
+

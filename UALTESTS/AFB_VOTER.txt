@@ -1,0 +1,29 @@
+test AFB_VOTER_3, AFB tests for AFB_VOTER element
+schema AFB_VOTER
+compatible MODULE_LM1SF00
+set #TUN_DSCR1 = 0, #TUN_DSCR2 = 0, #TUN_DSCR2 = 0
+check #OUT_VOTER003 == 0
+check #OUT_VOTER_ERR_MS003 == 0
+check #OUT_VOTER_ERR_ST003 == 0 
+
+set #TUN_DSCR1 = 1, #TUN_DSCR2 = 0, #TUN_DSCR2 = 0
+check #OUT_VOTER003 == 0
+check #OUT_VOTER_ERR_MS003 == 1
+check #OUT_VOTER_ERR_ST003 == 1
+
+set #TUN_DSCR1 = 0, #TUN_DSCR2 = 1, #TUN_DSCR2 = 1
+check #OUT_VOTER003 == 0
+check #OUT_VOTER_ERR_MS003 == 1
+check #OUT_VOTER_ERR_ST003 == 1
+
+set #TUN_DSCR1 = 1, #TUN_DSCR2 = 1, #TUN_DSCR2 = 0
+check #OUT_VOTER003 == 1
+check #OUT_VOTER_ERR_MS003 == 0
+check #OUT_VOTER_ERR_ST003 == 0
+
+set #TUN_DSCR1 = 1, #TUN_DSCR2 = 1, #TUN_DSCR2 = 1
+check #OUT_VOTER003 == 1
+check #OUT_VOTER_ERR_MS003 == 0
+check #OUT_VOTER_ERR_ST003 == 1
+
+endtest

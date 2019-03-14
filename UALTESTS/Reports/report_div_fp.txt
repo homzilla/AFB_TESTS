@@ -1,0 +1,45 @@
+Report from: 13-03-2019 15:25:00
+
+Test File: E:\UALTESTS\AFB_DIV_FP.txt
+
+Test AFB_DIV_FP, AFB tests for AFB_DIV_FP element
+    Set #TUN_IN_FP1=4.0
+    Set #TUN_IN_FP2=2.0
+    Check #OUT_DIV_FP001=2.0 - Ok
+    Set #TUN_IN_FP1=66.5
+    Set #TUN_IN_FP2=4.7
+    // уточнить сколько знаков после запятой выводить
+    Check #OUT_DIV_FP001=14.15 - Fail    [ received: 14.15 ]
+    Set #TUN_IN_FP1=0.0
+    Set #TUN_IN_FP2=12.37
+    Check #OUT_DIV_FP001=0.0 - Ok
+    Check #OUT_ZERO_DIV_FP001=1 - Ok
+    Set #TUN_IN_FP1=0.0
+    Set #TUN_IN_FP2=12.37
+    Check #OUT_DIV_FP001=0.0 - Ok
+    Set #TUN_IN_FP1=123.6
+    Set #TUN_IN_FP2=0.0
+    Check #OUT_DIV_BY_ZERO_DIV_FP001=1 - Ok
+    Set #TUN_IN_FP1=-295.9
+    Set #TUN_IN_FP2=0.0
+    Check #OUT_DIV_BY_ZERO_DIV_FP001=1 - Ok
+    Set #TUN_IN_FP1=0.0
+    Set #TUN_IN_FP2=0.0
+    Check #OUT_NAN_DIV_FP001=1 - Ok
+    //set #TUN_IN_FP1 = 0 , #TUN_IN_FP2 = ±∞
+    //check #OUT_ZERO_DIV_FP001 == 1
+    //set #TUN_IN_FP1 = 0 , #TUN_IN_FP2 = 12.37
+    //check #UNDERFLOW_DIV_FP001 == 1
+    //set #TUN_IN_FP1 = 123.5 , #TUN_IN_FP2 = NaN
+    //check #OUT_NAN_DIV_FP001 == 1
+    //set #TUN_IN_FP1 = 123.5 , #TUN_IN_FP2 = NaN
+    //check #OUT_NAN_DIV_FP001 == 1
+    //set #TUN_IN_FP1 = NaN , #TUN_IN_FP2 = 100.15
+    //check #OUT_NAN_DIV_FP001 == 1
+    //set #TUN_IN_FP1 = NaN , #TUN_IN_FP2 = 0
+    //check #OUT_NAN_DIV_FP001 = 1
+    //check #OUT_DIV_BY_ZERO_DIV_FP001 == 1
+    //set #TUN_IN_FP1 = ±∞ , #TUN_IN_FP2 = ±∞
+    //check #OUT_NAN_DIV_FP001 == 1
+Endtest AFB_DIV_FP - error(s): 1
+

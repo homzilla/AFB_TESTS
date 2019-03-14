@@ -1,0 +1,8 @@
+Report from: 26-02-2019 13:59:16
+
+Test File: E:\UALTESTS\AFB_ADD_SI.txt
+
+(line 16) Error : Signal #TUN_IN_SI1 failed value of signal (type Float32 instead SignedInt32)
+(line 16) Error : Signal #TUN_IN_SI2 failed value of signal (type Float32 instead SignedInt32)
+(line 17) Error : Signal #OUT_ADD_SI001 failed value of signal (type Float32 instead SignedInt32)
+Found error(s): 3

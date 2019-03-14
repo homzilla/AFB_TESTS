@@ -1,0 +1,103 @@
+Report from: 21-02-2019 11:20:08
+
+Test File: E:\UALTESTS\AFB_CMP_FP_SINGLE_MULTIVARIANTS.txt
+
+Test AFB_CMP_FP_EQ_1, AFB tests for CMP_FP_EQ element
+    //SETPOINT 0
+    //DEAD_BAND = 10
+    // set - hys/2 <= in <= set + hys/2
+    Set #TUN_IN_FP1=-11.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=-10.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-9.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=0.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=0.1000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=4.9900
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=5.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=5.0900
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=5.1000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=5.9000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=6.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=8.5000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=9.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=9.5000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=10.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=11.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=5.1000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=5.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=4.9900
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=0.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-0.1000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-1.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-4.9900
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-5.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-5.1000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=-10.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=-11.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=-200.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=-5.2500
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=-5.0100
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=0 - Fail    [ received: 1 ]
+    Set #TUN_IN_FP1=-5.0000
+    Set #TUN_SET_CMP_FP_EQ001=0.0000
+    Check #OUT_CMP_FP_EQ001=1 - Ok
+Endtest AFB_CMP_FP_EQ_1 - error(s): 12
+

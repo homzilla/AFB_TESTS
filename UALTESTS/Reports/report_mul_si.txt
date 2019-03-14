@@ -1,0 +1,41 @@
+Report from: 26-02-2019 15:50:07
+
+Test File: E:\UALTESTS\AFB_MUL_SI.txt
+
+Test AFB_MUL_SI, AFB tests for AFB_MUL_SI element
+    //multiplication
+    Set #TUN_IN_SI1=2
+    Set #TUN_IN_SI2=2
+    Check #OUT_MUL_SI001=4 - Ok
+    Set #TUN_IN_SI1=20
+    Set #TUN_IN_SI2=22
+    Check #OUT_MUL_SI001=440 - Fail    [ received: 42 ]
+    Set #TUN_IN_SI1=-2220
+    Set #TUN_IN_SI2=-1000
+    Check #OUT_MUL_SI001=2200000 - Fail    [ received: -3220 ]
+    Set #TUN_IN_SI1=-2
+    Set #TUN_IN_SI2=2
+    Check #OUT_MUL_SI001=-4 - Fail    [ received: 0 ]
+    Set #TUN_IN_SI1=-100
+    Set #TUN_IN_SI2=-250
+    Check #OUT_MUL_SI001=25000 - Fail    [ received: -350 ]
+    //zero
+    Set #TUN_IN_SI1=0
+    Set #TUN_IN_SI2=0
+    Check #OUT_MUL_SI001=440 - Fail    [ received: 0 ]
+    Check #OUT_ZERO_MUL_SI001=1 - Ok
+    Set #TUN_IN_SI1=100
+    Set #TUN_IN_SI2=0
+    Check #OUT_MUL_SI001=0 - Fail    [ received: 100 ]
+    Check #OUT_ZERO_MUL_SI001=1 - Fail    [ received: 0 ]
+    Set #TUN_IN_SI1=0
+    Set #TUN_IN_SI2=100
+    Check #OUT_MUL_SI001=0 - Fail    [ received: 100 ]
+    Check #OUT_ZERO_MUL_SI001=1 - Fail    [ received: 0 ]
+    //overflow
+    // уточнить
+    Set #TUN_IN_SI1=2147483647 - Fail    [ received: 0 ]
+    Set #TUN_IN_SI2=2147483647 - Fail    [ received: 100 ]
+    Check #OUT_ZERO_MUL_SI001=1 - Fail    [ received: 0 ]
+Endtest AFB_MUL_SI - error(s): 12
+

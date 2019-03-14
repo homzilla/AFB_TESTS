@@ -1,0 +1,44 @@
+Report from: 07-03-2019 11:31:24
+
+Test File: E:\UALTESTS\AFB_INV_FP.txt
+
+Test AFB_INV_FP, AFB tests for AFB_INV_FP element
+    Set #TUN_IN_FP1=0.0
+    Check #OUT_INV_FP001=inf - Ok
+    Check #OUT_DIV_DY_ZERO_INV_FP001=1 - Ok
+    Set #TUN_IN_FP1=0.1
+    Check #OUT_INV_FP001=10.0 - Ok
+    Set #TUN_IN_FP1=-0.1
+    Check #OUT_INV_FP001=-10.0 - Ok
+    Set #TUN_IN_FP1=0.2
+    Check #OUT_INV_FP001=5.0 - Ok
+    Set #TUN_IN_FP1=-0.2
+    Check #OUT_INV_FP001=-5.0 - Ok
+    Set #TUN_IN_FP1=1.0
+    Check #OUT_INV_FP001=1.0 - Ok
+    Set #TUN_IN_FP1=2.0
+    Check #OUT_INV_FP001=0.5 - Ok
+    Set #TUN_IN_FP1=100.0
+    Check #OUT_INV_FP001=0.01 - Ok
+    Set #TUN_IN_FP1=-100.0
+    Check #OUT_INV_FP001=-0.01 - Ok
+    Set #TUN_IN_FP1=12.5
+    Check #OUT_INV_FP001=0.08 - Ok
+    Set #TUN_IN_FP1=25.6
+    Check #OUT_INV_FP001=0.0390625 - Ok
+    Set #TUN_IN_FP1=150.5
+    Check #OUT_INV_FP001=0.00664452 - Ok
+    Set #TUN_IN_FP1=125.5
+    Check #OUT_INV_FP001=0.00796813 - Ok
+    Set #TUN_IN_FP1=100.0
+    Check #OUT_INV_FP001=0.01 - Ok
+    Set #TUN_IN_FP1=150.5
+    Check #OUT_INV_FP001=0.00664452 - Ok
+    Set #TUN_IN_FP1=99.9
+    Check #OUT_INV_FP001=0.01001001 - Ok
+    Set #TUN_IN_FP1=0.0
+    Check #OUT_INV_FP001=100000.0 - Ok
+    Set #TUN_IN_FP1=0.001
+    Check #OUT_INV_FP001=1000.0 - Ok
+Endtest AFB_INV_FP - Ok
+

@@ -1,0 +1,11 @@
+Report from: 19-02-2019 16:56:33
+
+Test File: E:\UALTESTS\AFB_NOT.txt
+
+Test AFB_NOT, NOT element function test
+    Set #TUN_DSCR1=0 - Ok
+    Check #OUT_NOT=1 - Ok
+    Set #TUN_DSCR1=1 - Ok
+    Check #OUT_NOT=0 - Ok
+Endtest - Ok
+

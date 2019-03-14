@@ -1,0 +1,37 @@
+Report from: 14-03-2019 11:32:47
+
+Test File: E:\UALTESTS\AFB_VOTER.txt
+
+Test AFB_VOTER_3, AFB tests for AFB_VOTER element
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=0
+    Set #TUN_DSCR2=0
+    Check #OUT_VOTER003=0 - Ok
+    Check #OUT_VOTER_ERR_MS003=0 - Ok
+    Check #OUT_VOTER_ERR_ST003=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=0
+    Set #TUN_DSCR2=0
+    Check #OUT_VOTER003=0 - Ok
+    Check #OUT_VOTER_ERR_MS003=1 - Ok
+    Check #OUT_VOTER_ERR_ST003=1 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=1
+    Set #TUN_DSCR2=1
+    Check #OUT_VOTER003=0 - Ok
+    Check #OUT_VOTER_ERR_MS003=1 - Ok
+    Check #OUT_VOTER_ERR_ST003=1 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=1 - Fail    [ received: 0 ]
+    Set #TUN_DSCR2=0
+    Check #OUT_VOTER003=1 - Fail    [ received: 0 ]
+    Check #OUT_VOTER_ERR_MS003=0 - Fail    [ received: 1 ]
+    Check #OUT_VOTER_ERR_ST003=0 - Fail    [ received: 1 ]
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=1
+    Set #TUN_DSCR2=1
+    Check #OUT_VOTER003=1 - Ok
+    Check #OUT_VOTER_ERR_MS003=0 - Ok
+    Check #OUT_VOTER_ERR_ST003=1 - Ok
+Endtest AFB_VOTER_3 - error(s): 4
+

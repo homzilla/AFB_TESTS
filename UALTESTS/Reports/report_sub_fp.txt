@@ -1,0 +1,32 @@
+Report from: 07-03-2019 11:46:33
+
+Test File: E:\UALTESTS\AFB_SUB_FP.txt
+
+Test AFB_SUB_FP, AFB tests for AFB_SUB_FP element
+    Set #TUN_IN_FP1=2.1
+    Set #TUN_IN_FP2=1.1
+    Check #OUT_SUB_FP001=1.0 - Fail    [ received: 1.0 ]
+    Set #TUN_IN_FP1=20.5
+    Set #TUN_IN_FP2=10.5
+    Check #OUT_SUB_FP001=10.0 - Ok
+    Set #TUN_IN_FP1=255.6
+    Set #TUN_IN_FP2=458.6
+    Check #OUT_SUB_FP001=-203.0 - Ok
+    Set #TUN_IN_FP1=150.8
+    Set #TUN_IN_FP2=150.8
+    Check #OUT_SUB_FP001=0.0 - Ok
+    Check #OUT_ZERO_SUB_FP001=1 - Ok
+    Set #TUN_IN_FP1=0.1
+    Set #TUN_IN_FP2=0.1
+    Check #OUT_SUB_FP001=0.0 - Ok
+    Check #OUT_ZERO_SUB_FP001=1 - Ok
+    Check #UNDERFLOW_SUB_FP001=1 - Fail    [ received: 0 ]
+    //set #TUN_IN_FP1 = ±∞ , #TUN_IN_FP2 = ±∞ // верно задать значения
+    // check #OUT_SUB_FP1 = число
+    // check #OVERFLOW_SUB_FP1 =1
+    //set #TUN_IN_FP1 = Proper , #TUN_IN_FP2 = NAN
+    // check #OUT_NAN_SUB_FP1 = 1
+    //set #TUN_IN_FP1 = NAN , #TUN_IN_FP2 = Proper
+    // check #OUT_NAN_SUB_FP1 = 1
+Endtest AFB_SUB_FP - error(s): 2
+

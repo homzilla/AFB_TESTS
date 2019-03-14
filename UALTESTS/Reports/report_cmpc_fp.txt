@@ -1,0 +1,52 @@
+Report from: 28-02-2019 10:30:41
+
+Test File: E:\UALTESTS\AFB_CMPC_FP.txt
+
+Test AFB_CMPС_FP_EQ_0, AFB tests for CMPС_FP_EQ element
+    //const int DEAD_BAND = 10 // Added a constant with the value of DEAD_BAND, the same value is set on the scheme
+    //const int SETPOINT = 0 // Added a constant with the value of SETPOINT, the same value is set on the scheme
+    // set - hys <= in <= set + hys ; IMPORTRANT hys = hys / 2 // c RPCT hys передается уже посчитанный как hys = hys / 2 // правило рабочее для динамических компараторов EQ и NE
+    Set #TUN_IN_FP1=0.0
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=0.1
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=4.99
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=5.0
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=5.1
+    Check #OUT_CMPC_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=5.9
+    Check #OUT_CMPC_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=5.1
+    Check #OUT_CMPC_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=5.0
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=4.99
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=0.0
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-0.1
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-1.0
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-4.99
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-5.0
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    Set #TUN_IN_FP1=-5.1
+    Check #OUT_CMPC_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=-200.0
+    Check #OUT_CMPC_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=-5.25
+    Check #OUT_CMPC_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=-5.01
+    Check #OUT_CMPC_FP_EQ001=0 - Ok
+    Set #TUN_IN_FP1=-5.0
+    Check #OUT_CMPC_FP_EQ001=1 - Ok
+    // NaN check
+    Set #TUN_IN_FP1=nan - Fail    [ received: -5.0 ]
+    //check #OUT_CMPC_FP_EQ001 == 0
+    Check #OUT_NAN_CMPC_FP_EQ001=1 - Fail    [ received: 0 ]
+Endtest AFB_CMPС_FP_EQ_0 - error(s): 2
+

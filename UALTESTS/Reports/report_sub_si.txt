@@ -1,0 +1,29 @@
+Report from: 07-03-2019 11:46:20
+
+Test File: E:\UALTESTS\AFB_SUB_SI.txt
+
+Test AFB_SUB_SI, AFB tests for AFB_SUB_SI element
+    Set #TUN_IN_SI1=2
+    Set #TUN_IN_SI2=1
+    Check #OUT_SUB_SI001=1 - Ok
+    Set #TUN_IN_SI1=20
+    Set #TUN_IN_SI2=10
+    Check #OUT_SUB_SI001=10 - Ok
+    Set #TUN_IN_SI1=2556
+    Set #TUN_IN_SI2=4580
+    Check #OUT_SUB_SI001=-2024 - Ok
+    Set #TUN_IN_SI1=150
+    Set #TUN_IN_SI2=150
+    Check #OUT_SUB_SI001=0 - Ok
+    Check #OUT_ZERO_SUB_SI001=1 - Ok
+    Set #TUN_IN_SI1=0
+    Set #TUN_IN_SI2=0
+    Check #OUT_SUB_SI001=0 - Ok
+    Check #OUT_ZERO_SUB_SI001=1 - Ok
+    //set #TUN_IN_SI1 = ±∞ , #TUN_IN_SI2 = ±∞ // верно задать значения
+    // check #OUT_SUB_SI001 == число
+    // check #OVERFLOW_SUB_SI001 ==1
+    //set #TUN_IN_SI1 = NAN , #TUN_IN_SI2 == NAN
+    // check #OUT_NAN_SUB_SI001 == 1
+Endtest AFB_SUB_SI - Ok
+

@@ -1,0 +1,68 @@
+Report from: 07-03-2019 11:45:41
+
+Test File: E:\UALTESTS\AFB_POLY.txt
+
+Test AFB_POLY_1, AFB tests for AFB_POLY element
+    // 2 parameters
+    Set #TUN_IN_FP1=0.0
+    Check #OUT_POLY001=2.0 - Ok
+    Set #TUN_IN_FP1=1.0
+    Check #OUT_POLY001=5.0 - Ok
+    Set #TUN_IN_FP1=-1.0
+    Check #OUT_POLY001=-1.0 - Ok
+    Set #TUN_IN_FP1=0.1
+    Check #OUT_POLY001=2.3 - Ok
+    Set #TUN_IN_FP1=-0.1
+    Check #OUT_POLY001=1.7 - Ok
+    Set #TUN_IN_FP1=2559.6001
+    Check #OUT_POLY001=7680.8 - Ok
+    Set #TUN_IN_FP1=-10000.0
+    Check #OUT_POLY001=-29998.0 - Ok
+Endtest AFB_POLY_1 - Ok
+
+Test AFB_POLY_2, AFB tests for AFB_POLY element
+    // 5 parameters
+    Set #TUN_IN_FP2=1.0
+    Check #OUT_POLY002=23.0 - Ok
+    Set #TUN_IN_FP2=0.0
+    Check #OUT_POLY002=2.0 - Ok
+    Set #TUN_IN_FP2=-1.0
+    Check #OUT_POLY002=5.0 - Ok
+    Set #TUN_IN_FP2=-9.99
+    Check #OUT_POLY002=64209.42 - Ok
+    Set #TUN_IN_FP2=-0.09
+    Check #OUT_POLY002=1.77 - Ok
+Endtest AFB_POLY_2 - Ok
+
+Test AFB_POLY_3, AFB tests for AFB_POLY element
+    // 7 parameters
+    Set #TUN_IN_FP3=1.0
+    Check #OUT_POLY003=7.95999956 - Ok
+    Set #TUN_IN_FP3=0.0
+    Check #OUT_POLY003=0.1 - Ok
+    Set #TUN_IN_FP3=-1.0
+    Check #OUT_POLY003=-5.05999994 - Ok
+    Set #TUN_IN_FP3=-0.1
+    Check #OUT_POLY003=0.24505539 - Ok
+    Set #TUN_IN_FP3=0.1
+    Check #OUT_POLY003=-0.0215996 - Ok
+Endtest AFB_POLY_3 - Ok
+
+Test AFB_POLY_4, AFB tests for AFB_POLY element
+    // 9 parameters
+    Set #TUN_IN_FP4=0.0
+    Check #OUT_POLY004=-1.2 - Ok
+    Set #TUN_IN_FP4=1.0
+    Check #OUT_POLY004=8.59 - Ok
+    Set #TUN_IN_FP4=-1.0
+    Check #OUT_POLY004=-25.59 - Ok
+    Set #TUN_IN_FP4=0.1
+    Check #OUT_POLY004=-0.87 - Ok
+    Set #TUN_IN_FP4=-0.1
+    Check #OUT_POLY004=-1.53 - Ok
+    Set #TUN_IN_FP4=2.5
+    Check #OUT_POLY004=585.43 - Ok
+    Set #TUN_IN_FP4=-2.5
+    Check #OUT_POLY004=-20127.87 - Ok
+Endtest AFB_POLY_4 - Ok
+

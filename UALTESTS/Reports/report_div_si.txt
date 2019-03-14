@@ -1,0 +1,32 @@
+Report from: 26-02-2019 16:09:43
+
+Test File: E:\UALTESTS\AFB_DIV_SI.txt
+
+Test AFB_DIV_SI, AFB tests for AFB_DIV_SI element
+    Set #TUN_IN_SI1=4
+    Set #TUN_IN_SI2=2
+    Check #OUT_DIV_SI001=2 - Ok
+    Set #TUN_IN_SI1=-4
+    Set #TUN_IN_SI2=2
+    Check #OUT_DIV_SI001=-2 - Ok
+    Set #TUN_IN_SI1=2840
+    Set #TUN_IN_SI2=287
+    Check #OUT_DIV_SI001=9 - Ok
+    Set #TUN_IN_SI1=0
+    Set #TUN_IN_SI2=2
+    Check #OUT_DIV_SI001=0 - Ok
+    Check #OUT_ZERO_DIV_SI001=1 - Ok
+    Set #TUN_IN_SI1=0
+    Set #TUN_IN_SI2=0
+    Check #OUT_DIV_BY_ZERO_DIV_SI001=1 - Ok
+    Set #TUN_IN_SI1=-12
+    Set #TUN_IN_SI2=0
+    Check #OUT_DIV_BY_ZERO_DIV_SI001=1 - Ok
+    Set #TUN_IN_SI1=1
+    Set #TUN_IN_SI2=0
+    Check #OUT_DIV_BY_ZERO_DIV_SI001=1 - Ok
+    Set #TUN_IN_SI1=199
+    Set #TUN_IN_SI2=0
+    Check #OUT_DIV_BY_ZERO_DIV_SI001=1 - Ok
+Endtest AFB_DIV_SI - Ok
+
