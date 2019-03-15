@@ -1,0 +1,57 @@
+Report from: 15-03-2019 16:58:31
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_TCONV_FP.txt
+
+Test AFB_TCONV_FP1, AFB tests for AFB_TCONV_FP element
+    Set #TUN_IN_FP1=0.0
+    Check #OUT_TCONV_FP_SI1=0 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+    Set #TUN_IN_FP1=1.1
+    Check #OUT_TCONV_FP_SI1=1 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+    Set #TUN_IN_FP1=1.399
+    Check #OUT_TCONV_FP_SI1=1 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+    Set #TUN_IN_FP1=1.4
+    Check #OUT_TCONV_FP_SI1=1 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+    Set #TUN_IN_FP1=1.41
+    Check #OUT_TCONV_FP_SI1=1 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+    Set #TUN_IN_FP1=1.499
+    Check #OUT_TCONV_FP_SI1=1 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+    Set #TUN_IN_FP1=1.5
+    Check #OUT_TCONV_FP_SI1=2 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+    Set #TUN_IN_FP1=1.9
+    Check #OUT_TCONV_FP_SI1=2 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+    Set #TUN_IN_FP1=2.2
+    Check #OUT_TCONV_FP_SI1=2 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+    Set #TUN_IN_FP1=2.55
+    Check #OUT_TCONV_FP_SI1=3 - Ok
+    Check #OUT_OVER_FLOW_TCONV_FP_SI=0 - Ok
+    Check #OUT_UNDERFLOW_FP_SI=0 - Ok
+    Check #OUT_NAN_TCONV_FP_SI=0 - Ok
+Endtest AFB_TCONV_FP1 - Ok
+

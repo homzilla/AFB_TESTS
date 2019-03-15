@@ -1,0 +1,76 @@
+Report from: 15-03-2019 13:36:15
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_CNT_DN.txt
+
+Test AFB_CNT_DN1, AFB tests for AFB_CNT_DN element
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=1
+    Check #OUT_CNT_DN1=0 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=0 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-1 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-1 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-2 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-2 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-3 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-3 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-4 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-4 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-5 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-5 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-6 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-6 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-7 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-7 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-8 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-8 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-9 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-9 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-10 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR_RESET1=0
+    Check #OUT_CNT_DN1=-10 - Ok
+Endtest AFB_CNT_DN1 - Ok
+

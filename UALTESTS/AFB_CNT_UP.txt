@@ -85,5 +85,7 @@ set #TUN_DSCR1 = 1, #TUN_DSCR_RESET1 =0
 check #OUT_CNT_UP1 == 20
 set #TUN_DSCR1 = 0, #TUN_DSCR_RESET1 =0
 check #OUT_CNT_UP1 == 20
+set #TUN_DSCR1 = 0, #TUN_DSCR_RESET1 =1
+check #OUT_CNT_UP1 == 0
 
 endtest
