@@ -1,4 +1,50 @@
-Report from: 28-02-2019 16:37:39
+Report from: 19-03-2019 14:06:07
 
-Test File: E:\UALTESTS\AFB_MUL_FP.txt
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_MUL_FP.txt
+
+Test AFB_MUL_FP, AFB tests for AFB_MUL_FP element
+    Set #TUN_IN_FP1=2.0
+    Set #TUN_IN_FP2=2.0
+    Check #OUT_MUL_FP001=4.0 - Ok
+    Set #TUN_IN_FP1=25.5
+    Set #TUN_IN_FP2=2.6
+    Check #OUT_MUL_FP001=66.3 - Ok
+    Set #TUN_IN_FP1=-45.0
+    Set #TUN_IN_FP2=12.0
+    Check #OUT_MUL_FP001=-540.0 - Ok
+    Set #TUN_IN_FP1=2.55
+    Set #TUN_IN_FP2=154.9
+    Check #OUT_MUL_FP001=394.99 - Ok
+    Set #TUN_IN_FP1=0.0
+    Set #TUN_IN_FP2=0.0
+    Check #OUT_MUL_FP001=0.0 - Ok
+    Check #OUT_ZERO_MUL_FP001=1 - Ok
+    //set #TUN_IN_FP1 = 55 , #TUN_IN_FP2 = NaN
+    //check #OUT_NAN_MUL_FP001 == 1
+    Set #TUN_IN_FP1=1.0
+    Set #TUN_IN_FP2=-150.5
+    Check #OUT_MUL_FP001=-150.5 - Ok
+    Set #TUN_IN_FP1=1.0
+    Set #TUN_IN_FP2=0.0
+    Check #OUT_MUL_FP001=0.0 - Ok
+    Check #OUT_ZERO_MUL_FP001=1 - Ok
+    Set #TUN_IN_FP1=0.0
+    Set #TUN_IN_FP2=1.0
+    Check #OUT_MUL_FP001=0.0 - Ok
+    Check #OUT_ZERO_MUL_FP001=1 - Ok
+    Set #TUN_IN_FP1=0.0
+    Set #TUN_IN_FP2=-1.1
+    Check #OUT_MUL_FP001=0.0 - Ok
+    Check #OUT_ZERO_MUL_FP001=1 - Ok
+    //set #TUN_IN_FP1 = 0 , #TUN_IN_FP2 = ±∞ // как задать ±∞ ?
+    //check #OUT_MUL_FP001 = 0
+    //check #OUT_NAN_MUL_FP001 == 1
+    //set #TUN_IN_FP1 = 0 , #TUN_IN_FP2 = NaN
+    //check #OUT_NAN_MUL_FP001 == 1
+    //set #TUN_IN_FP1 = NaN , #TUN_IN_FP2 = any
+    //check #OUT_NAN_MUL_FP001 == 1
+    //set #TUN_IN_FP1 = Proper , #TUN_IN_FP2 = Proper
+    //check #OUT_MUL_FP001 =0
+    //check #UNDERFLOW_MUL_FP001 == 1
+Endtest AFB_MUL_FP - Ok
 

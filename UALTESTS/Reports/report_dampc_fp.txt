@@ -1,0 +1,111 @@
+Report from: 21-03-2019 17:51:05
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_DAMPC_FP.txt
+
+Test AFB_DAMPC_FP_1, AFB tests for AFB_DAMP_FP element
+    //dtime = 5ms
+    Set #TUN_IN_FP1=0.0
+    Check #OUT_DAMPC_FP1=0.0 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP1=1 - Ok
+    Check #OUT_NAN_DAMPC_FP1=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP1=0 - Ok
+    Set #TUN_IN_FP1=1.0
+    Check #OUT_DAMPC_FP1=1.0 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP1=0 - Ok
+    Check #OUT_NAN_DAMPC_FP1=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP1=0 - Ok
+    Set #TUN_IN_FP1=4.0
+    Check #OUT_DAMPC_FP1=4.0 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP1=0 - Ok
+    Check #OUT_NAN_DAMPC_FP1=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP1=0 - Ok
+    Set #TUN_IN_FP1=144.0
+    Check #OUT_DAMPC_FP1=144.0 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP1=0 - Ok
+    Check #OUT_NAN_DAMPC_FP1=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP1=0 - Ok
+    Set #TUN_IN_FP1=100000000.0
+    Check #OUT_DAMPC_FP1=100000000.0 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP1=0 - Ok
+    Check #OUT_NAN_DAMPC_FP1=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP1=0 - Ok
+    // проверить граничные значения!!!
+    Set #TUN_IN_FP1=1755226570752.0 - Fail    [ received: 100000000.0 ]
+    Check #OUT_DAMPC_FP1=1755226570752.0 - Fail    [ received: 100000000.0 ]
+    Check #OUT_OVERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP1=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP1=0 - Ok
+    Check #OUT_NAN_DAMPC_FP1=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP1=0 - Ok
+Endtest AFB_DAMPC_FP_1 - error(s): 2
+
+Test AFB_DAMPC_FP_2, AFB tests for AFB_DAMP_FP element
+    //dtime = 10ms
+    Set #TUN_IN_FP2=0.0
+    Check #OUT_DAMPC_FP2=0.0 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP2=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP2=0 - Ok
+    // This flag set if OUT == 0
+    Check #OUT_ZERO_DAMPC_FP2=1 - Fail    [ received: 0 ]
+    Check #OUT_NAN_DAMPC_FP2=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP2=0 - Ok
+    Set #TUN_IN_FP2=0.1
+    Check #OUT_DAMPC_FP2=0.1 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP2=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP2=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP2=0 - Ok
+    Check #OUT_NAN_DAMPC_FP2=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP2=0 - Ok
+    Set #TUN_IN_FP2=10.0
+    Check #OUT_DAMPC_FP2=10.0 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP2=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP2=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP2=0 - Ok
+    Check #OUT_NAN_DAMPC_FP2=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP2=0 - Ok
+    Set #TUN_IN_FP2=99999.99
+    Check #OUT_DAMPC_FP2=99999.99 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP2=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP2=0 - Ok
+    // This flag set if OUT == 0
+    Check #OUT_ZERO_DAMPC_FP2=0 - Ok
+    Check #OUT_NAN_DAMPC_FP2=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP2=0 - Ok
+Endtest AFB_DAMPC_FP_2 - error(s): 1
+
+Test AFB_DAMPC_FP_3, AFB tests for AFB_DAMP_FP element
+    //dtime = 100ms
+    Set #TUN_IN_FP3=0.0
+    Check #OUT_DAMPC_FP3=0.0 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP3=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP3=0 - Ok
+    // This flag set if OUT == 0
+    Check #OUT_ZERO_DAMPC_FP3=1 - Fail    [ received: 0 ]
+    Check #OUT_NAN_DAMPC_FP3=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP3=0 - Ok
+    Set #TUN_IN_FP3=0.01
+    Check #OUT_DAMPC_FP3=0.01 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP3=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP3=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP3=0 - Ok
+    Check #OUT_NAN_DAMPC_FP3=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP3=0 - Ok
+    Set #TUN_IN_FP3=777.88800049
+    Check #OUT_DAMPC_FP3=777.89 - Ok
+    Check #OUT_OVERFLOW_DAMPC_FP3=0 - Ok
+    Check #OUT_UNDERFLOW_DAMPC_FP3=0 - Ok
+    Check #OUT_ZERO_DAMPC_FP3=0 - Ok
+    Check #OUT_NAN_DAMPC_FP3=0 - Ok
+    Check #OUT_PARAM_ERR_DAMPC_FP3=0 - Ok
+Endtest AFB_DAMPC_FP_3 - error(s): 1
+

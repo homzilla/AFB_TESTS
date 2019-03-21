@@ -1,6 +1,6 @@
-Report from: 13-03-2019 16:20:27
+Report from: 21-03-2019 14:41:51
 
-Test File: E:\UALTESTS\AFB_DEC_NUM.txt
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_DEC_NUM.txt
 
 Test AFB_DEC_NUM_1, AFB tests for AFB_DEC_NUM element
     Set #TUN_IN_SI1=0
@@ -735,7 +735,7 @@ Test AFB_DEC_NUM_32, AFB tests for AFB_DEC_NUM element
     Check #OUT_32DEC_NUM030=1 - Ok
     Check #OUT_32DEC_NUM031=1 - Ok
     Check #OUT_32DEC_NUM032=1 - Ok
-    Set #TUN_IN_SI1=2147483647 - Fail    [ received: -1 ]
+    Set #TUN_IN_SI1=2147483647
     Check #OUT_32DEC_NUM001=1 - Ok
     Check #OUT_32DEC_NUM002=1 - Ok
     Check #OUT_32DEC_NUM003=1 - Ok
@@ -767,9 +767,9 @@ Test AFB_DEC_NUM_32, AFB tests for AFB_DEC_NUM element
     Check #OUT_32DEC_NUM029=1 - Ok
     Check #OUT_32DEC_NUM030=1 - Ok
     Check #OUT_32DEC_NUM031=1 - Ok
-    Check #OUT_32DEC_NUM032=0 - Fail    [ received: 1 ]
-    Set #TUN_IN_SI1=2147483646 - Fail    [ received: -1 ]
-    Check #OUT_32DEC_NUM001=0 - Fail    [ received: 1 ]
+    Check #OUT_32DEC_NUM032=0 - Ok
+    Set #TUN_IN_SI1=2147483646
+    Check #OUT_32DEC_NUM001=0 - Ok
     Check #OUT_32DEC_NUM002=1 - Ok
     Check #OUT_32DEC_NUM003=1 - Ok
     Check #OUT_32DEC_NUM004=1 - Ok
@@ -800,7 +800,7 @@ Test AFB_DEC_NUM_32, AFB tests for AFB_DEC_NUM element
     Check #OUT_32DEC_NUM029=1 - Ok
     Check #OUT_32DEC_NUM030=1 - Ok
     Check #OUT_32DEC_NUM031=1 - Ok
-    Check #OUT_32DEC_NUM032=0 - Fail    [ received: 1 ]
+    Check #OUT_32DEC_NUM032=0 - Ok
     Set #TUN_IN_SI1=1000000000
     Check #OUT_32DEC_NUM001=0 - Ok
     Check #OUT_32DEC_NUM002=0 - Ok
@@ -854,18 +854,18 @@ Test AFB_DEC_NUM_32, AFB tests for AFB_DEC_NUM element
     Check #OUT_32DEC_NUM017=1 - Ok
     Check #OUT_32DEC_NUM018=0 - Ok
     Check #OUT_32DEC_NUM019=1 - Ok
-    Check #OUT_32DEC_NUM020=1 - Fail    [ received: 0 ]
+    Check #OUT_32DEC_NUM020=0 - Ok
     Check #OUT_32DEC_NUM021=1 - Ok
-    Check #OUT_32DEC_NUM022=0 - Fail    [ received: 1 ]
+    Check #OUT_32DEC_NUM022=1 - Ok
     Check #OUT_32DEC_NUM023=0 - Ok
-    Check #OUT_32DEC_NUM024=1 - Fail    [ received: 0 ]
+    Check #OUT_32DEC_NUM024=0 - Ok
     Check #OUT_32DEC_NUM025=1 - Ok
     Check #OUT_32DEC_NUM026=1 - Ok
-    Check #OUT_32DEC_NUM027=0 - Fail    [ received: 1 ]
-    Check #OUT_32DEC_NUM028=1 - Fail    [ received: 0 ]
+    Check #OUT_32DEC_NUM027=1 - Ok
+    Check #OUT_32DEC_NUM028=0 - Ok
     Check #OUT_32DEC_NUM029=1 - Ok
     Check #OUT_32DEC_NUM030=1 - Ok
-    Check #OUT_32DEC_NUM031=0 - Fail    [ received: 1 ]
+    Check #OUT_32DEC_NUM031=1 - Ok
     Check #OUT_32DEC_NUM032=0 - Ok
-Endtest AFB_DEC_NUM_32 - error(s): 11
+Endtest AFB_DEC_NUM_32 - Ok
 
