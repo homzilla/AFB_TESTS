@@ -1,0 +1,22 @@
+Report from: 29-03-2019 10:21:17
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_FF_D_FRONT.txt
+
+Test AFB_FF_D_FRONT_1, AFB tests for AFB_FF_D_FRONT element
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=1
+    Check #OUT_FF_D_FRONT=1 - Ok
+    // Yt=Yt-1
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=0
+    Check #OUT_FF_D_FRONT=1 - Ok
+    // Yt=Yt-1
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=1
+    Check #OUT_FF_D_FRONT=0 - Ok
+    // Yt=Yt-1
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=0
+    Check #OUT_FF_D_FRONT=0 - Ok
+Endtest AFB_FF_D_FRONT_1 - Ok
+

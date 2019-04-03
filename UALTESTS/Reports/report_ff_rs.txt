@@ -1,0 +1,26 @@
+Report from: 02-04-2019 10:37:41
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_FF_RS.txt
+
+Test AFB_FF_RS_1, AFB tests for AFB_FF_RS element
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=0
+    // Yt=Yt-1
+    Check #OUT_FF_RS=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=0
+    Check #OUT_FF_RS=1 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=0
+    Check #OUT_FF_RS=1 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=1
+    Check #OUT_FF_RS=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=1
+    Check #OUT_FF_RS=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=1
+    Check #OUT_FF_RS=0 - Ok
+Endtest AFB_FF_RS_1 - Ok
+

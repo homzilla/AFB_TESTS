@@ -1,0 +1,42 @@
+Report from: 02-04-2019 14:24:45
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_FF_T_DECAY.txt
+
+Test AFB_FF_T_DECAY_1, AFB tests for AFB_FF_T_DECAY element
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=1
+    //Yt=Yt-1
+    Check #OUT_FF_T_DECAY=1 - Fail    [ received: 0 ]
+    Set #TUN_DSCR1=1
+    Set #TUN_DSCR2=0 - Fail    [ received: 1 ]
+    //Yt=Yt-1
+    Check #OUT_FF_T_DECAY=1 - Fail    [ received: 0 ]
+    Set #TUN_DSCR1=0 - Fail    [ received: 1 ]
+    Set #TUN_DSCR2=1 - Fail    [ received: 0 ]
+    //Yt=not(Yt-1)
+    Check #OUT_FF_T_DECAY=1 - Ok
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=0 - Fail    [ received: 1 ]
+    //Yt=Yt-1
+    Check #OUT_FF_T_DECAY=0 - Ok
+Endtest AFB_FF_T_DECAY_1 - error(s): 6
+
+Test AFB_FF_T_DECAY_1, AFB tests for AFB_FF_T_DECAY element
+    Set #TUN_DSCR1=1 - Fail    [ received: 0 ]
+    Set #TUN_DSCR2=1
+    //Yt=Yt-1
+    Check #OUT_FF_T_DECAY=1 - Ok
+    Set #TUN_DSCR1=1 - Fail    [ received: 0 ]
+    Set #TUN_DSCR2=0
+    //Yt=Yt-1
+    Check #OUT_FF_T_DECAY=1 - Fail    [ received: 0 ]
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=1
+    //Yt=not(Yt-1)
+    Check #OUT_FF_T_DECAY=1 - Fail    [ received: 0 ]
+    Set #TUN_DSCR1=0
+    Set #TUN_DSCR2=0
+    //Yt=Yt-1
+    Check #OUT_FF_T_DECAY=0 - Ok
+Endtest AFB_FF_T_DECAY_1 - error(s): 4
+

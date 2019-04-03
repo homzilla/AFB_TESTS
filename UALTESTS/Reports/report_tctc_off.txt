@@ -1,0 +1,82 @@
+Report from: 02-04-2019 16:18:43
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_TCTC_OFF.txt
+
+Test AFB_TCTC_OFF_1, AFB tests for TCTC_OFF element
+    //time 1000
+    Set #TUN_DSCR1=0
+    Delay 1000 ms
+    Check #OUT_TCTC_OFF1=0 - Ok
+    Set #TUN_DSCR1=1
+    Delay 1000 ms
+    Check #OUT_TCTC_OFF1=1 - Ok
+    Set #TUN_DSCR1=1
+    Delay 1000 ms
+    Check #OUT_TCTC_OFF1=1 - Ok
+    Set #TUN_DSCR1=0
+    Delay 1000 ms
+    Check #OUT_TCTC_OFF1=0 - Ok
+    Set #TUN_DSCR1=0
+    Delay 500 ms
+    Check #OUT_TCTC_OFF1=0 - Ok
+    Set #TUN_DSCR1=1
+    Delay 500 ms
+    Check #OUT_TCTC_OFF1=1 - Ok
+    Set #TUN_DSCR1=1
+    Delay 100 ms
+    Check #OUT_TCTC_OFF1=1 - Ok
+    Set #TUN_DSCR1=1
+    Check #OUT_TCTC_OFF1=1 - Ok
+Endtest AFB_TCTC_OFF_1 - Ok
+
+Test AFB_TCTC_OFF_2, AFB tests for TCTC_OFF element
+    //time 5000
+    Set #TUN_DSCR2=0
+    Delay 5000 ms
+    Check #OUT_TCTC_OFF2=0 - Ok
+    Set #TUN_DSCR2=1
+    Delay 5000 ms
+    Check #OUT_TCTC_OFF2=1 - Ok
+    Set #TUN_DSCR2=1
+    Delay 5000 ms
+    Check #OUT_TCTC_OFF2=1 - Ok
+    Set #TUN_DSCR2=0
+    Delay 5000 ms
+    Check #OUT_TCTC_OFF2=0 - Ok
+    Set #TUN_DSCR2=0
+    Delay 1000 ms
+    Check #OUT_TCTC_OFF2=0 - Ok
+    Set #TUN_DSCR2=0
+    Delay 100 ms
+    Check #OUT_TCTC_OFF2=0 - Ok
+    Set #TUN_DSCR2=0
+    Delay 10000 ms
+    Check #OUT_TCTC_OFF2=0 - Ok
+Endtest AFB_TCTC_OFF_2 - Ok
+
+Test AFB_TCTC_OFF_3, AFB tests for TCTC_OFF element
+    //time 10000
+    Set #TUN_DSCR3=0
+    Delay 10000 ms
+    Set #TUN_DSCR3=1
+    Check #OUT_TCTC_OFF3=0 - Fail    [ received: 1 ]
+    Set #TUN_DSCR3=1
+    Delay 10000 ms
+    Check #OUT_TCTC_OFF3=1 - Ok
+    Set #TUN_DSCR3=1
+    Delay 10000 ms
+    Check #OUT_TCTC_OFF3=1 - Ok
+    Set #TUN_DSCR3=0
+    Delay 10000 ms
+    Check #OUT_TCTC_OFF3=0 - Ok
+    Set #TUN_DSCR3=0
+    Delay 5000 ms
+    Check #OUT_TCTC_OFF3=0 - Ok
+    Set #TUN_DSCR3=0
+    Delay 1000 ms
+    Check #OUT_TCTC_OFF3=0 - Ok
+    Set #TUN_DSCR3=0
+    Delay 10 ms
+    Check #OUT_TCTC_OFF3=0 - Ok
+Endtest AFB_TCTC_OFF_3 - error(s): 1
+

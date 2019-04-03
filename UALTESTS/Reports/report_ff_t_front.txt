@@ -1,0 +1,15 @@
+Report from: 02-04-2019 14:24:33
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_FF_T_FRONT.txt
+
+Test AFB_FF_T_FRONT_1, AFB tests for AFB_FF_T_FRONT element
+    Set #TUN_DSCR1=1
+    Check #OUT_FF_T_FRONT=1 - Fail    [ received: 0 ]
+    Set #TUN_DSCR1=0
+    Check #OUT_FF_T_FRONT=0 - Ok
+    Set #TUN_DSCR1=0
+    Check #OUT_FF_T_FRONT=0 - Ok
+    Set #TUN_DSCR1=0
+    Check #OUT_FF_T_FRONT=0 - Ok
+Endtest AFB_FF_T_FRONT_1 - error(s): 1
+
