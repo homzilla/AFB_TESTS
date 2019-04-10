@@ -1,0 +1,31 @@
+Report from: 08-04-2019 14:58:13
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_TCTC_ON.txt
+
+Test AFB_TCTC_ON_1, AFB tests for TCTC_ON element
+    //time 1000
+    Set #TUN_DSCR1=0
+    Delay 1000 ms
+    Check #OUT_TCTC_ON1=0 - Ok
+    Set #TUN_DSCR1=1
+    Delay 1000 ms
+    Check #OUT_TCTC_ON1=1 - Ok
+    Set #TUN_DSCR1=1
+    Delay 1000 ms
+    Check #OUT_TCTC_ON1=1 - Ok
+    Set #TUN_DSCR1=0
+    Delay 1000 ms
+    Check #OUT_TCTC_ON1=0 - Ok
+    Set #TUN_DSCR1=0
+    Delay 500 ms
+    Check #OUT_TCTC_ON1=0 - Ok
+    Set #TUN_DSCR1=1
+    Delay 500 ms
+    Check #OUT_TCTC_ON1=1 - Ok
+    Set #TUN_DSCR1=1
+    Delay 100 ms
+    Check #OUT_TCTC_ON1=1 - Ok
+    Set #TUN_DSCR1=1
+    Check #OUT_TCTC_ON1=1 - Ok
+Endtest AFB_TCTC_ON_1 - Ok
+

@@ -1,0 +1,26 @@
+test AFB_TCT_OFF_1, AFB tests for TCT_OFF 
+compatible MODULE_LM1SF00
+// Time 1000
+set #TUN_DSCR1 = 0, #TUN_TIME = 1000
+check #OUT_TCTC_VIBR1 == 0
+set #TUN_DSCR1 = 1, #TUN_TIME = 1000
+check #OUT_TCTC_VIBR1 == 1
+endtest
+
+test AFB_TCT_OFF_2, AFB tests for TCT_OFF 
+compatible MODULE_LM1SF00
+// Time 5000
+set #TUN_DSCR1 = 0, #TUN_TIME = 5000
+check #OUT_TCTC_VIBR1 == 0
+set #TUN_DSCR1 = 1, #TUN_TIME = 5000
+check #OUT_TCTC_VIBR1 == 1
+endtest
+
+test AFB_TCT_OFF_3, AFB tests for TCT_OFF 
+compatible MODULE_LM1SF00
+// Time 8000
+set #TUN_DSCR1 = 0, #TUN_TIME = 8000
+check #OUT_TCTC_VIBR1 == 0
+set #TUN_DSCR1 = 1, #TUN_TIME = 8000
+check #OUT_TCTC_VIBR1 == 1
+endtest

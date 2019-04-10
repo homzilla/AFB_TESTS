@@ -1,0 +1,244 @@
+Report from: 09-04-2019 14:24:10
+
+Test File: C:\Users\Workstation\Documents\GitHub\AFB_TESTS\UALTESTS\AFB_TCT.txt
+
+Test AFB_TCT_OFF_1, AFB tests for TCT_OFF
+    // Time 1000
+    Set #TUN_DSCR1=0
+    Set #TUN_TIME1=1000
+    Check #OUT_TCT_OFF=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_OFF=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_TIME1=1000
+    Check #OUT_TCT_OFF=1 - Ok
+    Check #PARAM_ERR_TCT_OFF=0 - Ok
+Endtest AFB_TCT_OFF_1 - error(s): 1
+
+Test AFB_TCT_OFF_2, AFB tests for TCT_OFF
+    // Time 5000
+    Set #TUN_DSCR1=0
+    Set #TUN_TIME1=5000
+    Check #OUT_TCT_OFF=0 - Fail    [ received: 1 ]
+    Check #PARAM_ERR_TCT_OFF=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_TIME1=5000
+    Check #OUT_TCT_OFF=1 - Ok
+    Check #PARAM_ERR_TCT_OFF=0 - Ok
+Endtest AFB_TCT_OFF_2 - error(s): 1
+
+Test AFB_TCT_OFF_3, AFB tests for TCT_OFF
+    // Time 8000
+    Set #TUN_DSCR1=0
+    Set #TUN_TIME1=8000
+    Check #OUT_TCT_OFF=1 - Ok
+    Check #PARAM_ERR_TCT_OFF=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_TIME1=8000
+    Check #OUT_TCT_OFF=1 - Ok
+    Check #PARAM_ERR_TCT_OFF=0 - Ok
+Endtest AFB_TCT_OFF_3 - Ok
+
+Test AFB_TCT_OFF_4, AFB tests for TCT_OFF
+    // Time 15000
+    Set #TUN_DSCR1=0
+    Set #TUN_TIME1=15000
+    Check #OUT_TCT_OFF=1 - Ok
+    Check #PARAM_ERR_TCT_OFF=0 - Ok
+    Set #TUN_DSCR1=1
+    Set #TUN_TIME1=15000
+    Check #OUT_TCT_OFF=1 - Ok
+    Check #PARAM_ERR_TCT_OFF=0 - Ok
+Endtest AFB_TCT_OFF_4 - Ok
+
+Test AFB_TCT_ON_1, AFB tests for TCT_ON
+    // Time 1000
+    Set #TUN_DSCR2=0
+    Set #TUN_TIME1=1000
+    Check #OUT_TCT_ON=0 - Ok
+    Check #PARAM_ERR_TCT_ON=0 - Ok
+    Set #TUN_DSCR2=1
+    Set #TUN_TIME2=1000
+    Check #OUT_TCT_ON=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_ON=0 - Ok
+Endtest AFB_TCT_ON_1 - error(s): 1
+
+Test AFB_TCT_ON_2, AFB tests for TCT_ON
+    // Time 5000
+    Set #TUN_DSCR1=0
+    Set #TUN_TIME1=5000
+    Check #OUT_TCT_ON=1 - Ok
+    Check #PARAM_ERR_TCT_ON=0 - Ok
+    Set #TUN_DSCR2=1
+    Set #TUN_TIME2=5000
+    Check #OUT_TCT_ON=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_ON=0 - Ok
+Endtest AFB_TCT_ON_2 - error(s): 1
+
+Test AFB_TCT_ON_3, AFB tests for TCT_ON
+    // Time 10000
+    Set #TUN_DSCR1=0
+    Set #TUN_TIME1=10000
+    Check #OUT_TCT_ON=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_ON=0 - Ok
+    Set #TUN_DSCR2=1
+    Set #TUN_TIME2=10000
+    Check #OUT_TCT_ON=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_ON=0 - Ok
+Endtest AFB_TCT_ON_3 - error(s): 2
+
+Test AFB_TCT_ON_4, AFB tests for TCT_ON
+    // Time 50000
+    Set #TUN_DSCR1=0
+    Set #TUN_TIME1=50000
+    Check #OUT_TCT_ON=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_ON=0 - Ok
+    Set #TUN_DSCR2=1
+    Set #TUN_TIME2=50000
+    Check #OUT_TCT_ON=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_ON=0 - Ok
+Endtest AFB_TCT_ON_4 - error(s): 2
+
+Test AFB_TCT_FILTER_1, AFB tests for TCT_FILTER
+    // Time 1000
+    Set #TUN_DSCR3=0
+    Set #TUN_TIME3=1000
+    Check #OUT_TCT_FILTER=0 - Ok
+    Check #PARAM_ERR_TCT_FILTER=0 - Ok
+    Set #TUN_DSCR3=1
+    Set #TUN_TIME3=1000
+    Check #OUT_TCT_FILTER=1 - Ok
+    Check #PARAM_ERR_TCT_FILTER=0 - Ok
+Endtest AFB_TCT_FILTER_1 - Ok
+
+Test AFB_TCT_FILTER_2, AFB tests for TCT_FILTER
+    // Time 5000
+    Set #TUN_DSCR3=0
+    Set #TUN_TIME3=5000
+    Check #OUT_TCT_FILTER=1 - Ok
+    Check #PARAM_ERR_TCT_FILTER=0 - Ok
+    Set #TUN_DSCR3=1
+    Set #TUN_TIME3=5000
+    Check #OUT_TCT_FILTER=0 - Ok
+    Check #PARAM_ERR_TCT_FILTER=0 - Ok
+Endtest AFB_TCT_FILTER_2 - Ok
+
+Test AFB_TCT_FILTER_3, AFB tests for TCT_FILTER
+    // Time 10000
+    Set #TUN_DSCR3=0
+    Set #TUN_TIME3=10000
+    Check #OUT_TCT_FILTER=0 - Ok
+    Check #PARAM_ERR_TCT_FILTER=0 - Ok
+    Set #TUN_DSCR3=1
+    Set #TUN_TIME3=10000
+    Check #OUT_TCT_FILTER=0 - Ok
+    Check #PARAM_ERR_TCT_FILTER=0 - Ok
+Endtest AFB_TCT_FILTER_3 - Ok
+
+Test AFB_TCT_FILTER_4, AFB tests for TCT_FILTER
+    // Time 0
+    Set #TUN_DSCR3=0
+    Set #TUN_TIME3=0
+    Check #OUT_TCT_FILTER=0 - Ok
+    Check #PARAM_ERR_TCT_FILTER=0 - Ok
+    Set #TUN_DSCR3=1
+    Set #TUN_TIME3=0
+    Check #OUT_TCT_FILTER=1 - Ok
+    Check #PARAM_ERR_TCT_FILTER=0 - Ok
+Endtest AFB_TCT_FILTER_4 - Ok
+
+Test AFB_TCT_RSV_1, AFB tests for TCT_RSV
+    // Time 1000
+    Set #TUN_DSCR4=0
+    Set #TUN_TIME4=1000
+    Check #OUT_TCT_RSV=0 - Ok
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+    Set #TUN_DSCR4=1
+    Set #TUN_TIME4=1000
+    Check #OUT_TCT_RSV=1 - Ok
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+Endtest AFB_TCT_RSV_1 - Ok
+
+Test AFB_TCT_RSV_2, AFB tests for TCT_RSV
+    // Time 5000
+    Set #TUN_DSCR4=0
+    Set #TUN_TIME4=5000
+    Check #OUT_TCT_RSV=0 - Ok
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+    Set #TUN_DSCR4=1
+    Set #TUN_TIME4=5000
+    Check #OUT_TCT_RSV=1 - Ok
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+Endtest AFB_TCT_RSV_2 - Ok
+
+Test AFB_TCT_RSV_3, AFB tests for TCT_RSV
+    // Time 10000
+    Set #TUN_DSCR4=0
+    Set #TUN_TIME4=10000
+    Check #OUT_TCT_RSV=1 - Ok
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+    Set #TUN_DSCR4=1
+    Set #TUN_TIME4=10000
+    Check #OUT_TCT_RSV=1 - Ok
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+Endtest AFB_TCT_RSV_3 - Ok
+
+Test AFB_TCT_RSV_4, AFB tests for TCT_RSV
+    // Time 0
+    Set #TUN_DSCR4=0
+    Set #TUN_TIME4=0
+    Check #OUT_TCT_RSV=0 - Ok
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+    Set #TUN_DSCR4=1
+    Set #TUN_TIME4=0
+    Check #OUT_TCT_RSV=0 - Ok
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+Endtest AFB_TCT_RSV_4 - Ok
+
+Test AFB_TCT_VIBR_1, AFB tests for TCT_VIBR
+    // Time 1000
+    Set #TUN_DSCR5=0
+    Set #TUN_TIME5=1000
+    Check #OUT_TCT_VIBR=0 - Ok
+    Check #PARAM_ERR_TCT_VIBR=0 - Ok
+    Set #TUN_DSCR5=1
+    Set #TUN_TIME5=1000
+    Check #OUT_TCT_RSV=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+Endtest AFB_TCT_VIBR_1 - error(s): 1
+
+Test AFB_TCT_VIBR_2, AFB tests for TCT_VIBR
+    // Time 5000
+    Set #TUN_DSCR5=0
+    Set #TUN_TIME5=5000
+    Check #OUT_TCT_VIBR=0 - Ok
+    Check #PARAM_ERR_TCT_VIBR=0 - Ok
+    Set #TUN_DSCR5=1
+    Set #TUN_TIME5=5000
+    Check #OUT_TCT_RSV=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+Endtest AFB_TCT_VIBR_2 - error(s): 1
+
+Test AFB_TCT_VIBR_3, AFB tests for TCT_VIBR
+    // Time 10000
+    Set #TUN_DSCR5=0
+    Set #TUN_TIME5=10000
+    Check #OUT_TCT_VIBR=0 - Fail    [ received: 1 ]
+    Check #PARAM_ERR_TCT_VIBR=0 - Ok
+    Set #TUN_DSCR5=1
+    Set #TUN_TIME5=10000
+    Check #OUT_TCT_RSV=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+Endtest AFB_TCT_VIBR_3 - error(s): 2
+
+Test AFB_TCT_VIBR_4, AFB tests for TCT_VIBR
+    // Time
+    Set #TUN_DSCR5=0
+    Set #TUN_TIME5=0
+    Check #OUT_TCT_VIBR=0 - Ok
+    Check #PARAM_ERR_TCT_VIBR=0 - Ok
+    Set #TUN_DSCR5=1
+    Set #TUN_TIME5=0
+    Check #OUT_TCT_RSV=1 - Fail    [ received: 0 ]
+    Check #PARAM_ERR_TCT_RSV=0 - Ok
+Endtest AFB_TCT_VIBR_4 - error(s): 1
+
